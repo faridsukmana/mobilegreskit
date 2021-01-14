@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <link rel="stylesheet" type="text/css" href="mobileui/style.css">
+        <meta name="format-detection" content="telephone=no">
+        <meta charset="utf-8">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+        <link rel="stylesheet" type="text/css" href="css/index.css">
+        <title>Asset Management</title>
+    </head>
+    <body class="has-header has-footer">
+        <div class="header orange-900" id="menu_header">
+            <h1 id="menu_title">Work Order</h1>
+            <div class="left">
+                <button class="icon ion-navicon-round" onclick="openMenu('menuDiscover')" id="opMenu"></button>
+            </div>
+            <div class="right">
+                <button class="icon ion-refresh" onclick="" id="refresh"></button>
+            </div>
+        </div>
+
+        <!--Open Menu-->
+        <div class="menu white cover" id="menuDiscover">
+            <div class="cover orange-900 align-center" style="padding-top: 5%; padding-bottom: 5%;">
+                <img class="avatar circle cover white border-white shadow" src="img/greskit-logo.png">
+                <h1 class="text-white"><b>Greskit version 1.3.1</b></h1>
+                <p class="text-white">marketing@greskit.com</p>
+            </div>
+            <div class="list no-border" style="padding-top: 5%;">
+                <a href="main.html" class="item space-small">
+                    <div class="left">
+                        <i class="icon ion-cube grey-300"></i>
+                    </div>
+                    <div class="left"><p class="text-black">Data</p></div>
+                </a>
+				<!--
+                <a href="transaction.html" class="item space-small">
+                    <div class="left">
+                        <i class="icon ion-ios-cart grey-300"></i>
+                    </div>
+                    <div class="left"><p class="text-black">Transaction</p></div>
+                </a>
+				-->
+                <a href="preventive.html" class="item space-small">
+                    <div class="left">
+                        <i class="icon ion-ios-cart grey-300"></i>
+                    </div>
+                    <div class="left"><p class="text-black">Maintenance</p></div>
+                </a>
+				<a class="item space-small" onclick="logout()">
+                    <div class="left">
+                        <i class="icon ion-log-out grey-300"></i>
+                    </div>
+                    <div class="left"><p class="text-black">Log Out</p></div>
+                </a>
+            </div>
+            <div style="padding-top: 10%; padding-bottom: 10%;">
+                <hr class="grey-300" style=" border-top: 0px solid;"></hr>
+            </div>
+            <div class="list no-border" style="padding-top: 5%;">
+                <a onclick="openPage('contact')" class="item space-small">
+                    <div class="left">
+                        <i class="icon ion-information-circled grey-300"></i>
+                    </div>
+                    <div class="left"><p class="text-black">Kontak Kami & Bantuan</p></div>
+                </a>
+            </div>
+        </div>
+
+        <!--Loading-->
+        <!--<div class="loading">Loading&#8230;</div>-->
+
+        <!----Menu Sub Header -->
+        <div id="index">
+            <!---Header Data-->
+            <div class="header sub white" id="sub_header_wo">
+                <div class="buttons-group full large">
+                    
+                    <button class="grey-300 white text-orange-900 icon ion-camera" id="cam_inv"></button>
+					<button class="grey-300 white text-orange-900 icon ion-skip-backward" id="back"></button>
+					<input type="hidden" id="assetid" value=""/>
+                    
+                </div>
+                <hr class="grey-300" style=" border-top: 0px solid;"></hr>
+            </div>
+
+            <!---Menu Content -->
+            <div class="content has-header" id="data_content">
+                
+            </div>
+        </div>
+
+        <script type="text/javascript" src="js/jquery.min.js"></script>
+        <script type="text/javascript" src="mobileui/mobileui.js"></script>
+        <!--Cordova js berpengaruh pada plugin cordova-->
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+        <script type="text/javascript" src="js/notify.js"></script>
+        <script type="text/javascript" src="js/list_wo.js"></script>
+    </body>
+</html>

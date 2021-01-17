@@ -48,10 +48,10 @@ app.initialize();
 //=========Variabel global untuk semua fungsi di dalam javascript===
 //var glo_url = 'http://localhost:4343/order/timuraya/page/wo/';
 //var glo_url = 'http://192.168.0.5:4343/order/timuraya/page/wo/';
-//var glo_url = 'https://timuraya.greskit.com/page/wo/';
+var glo_url = 'https://timuraya.greskit.com/page/wo/';
 //var glo_url = 'http://103.43.129.218:2223/greskit/';
 //var glo_url = 'http://103.43.129.218:2223/greskit/page/wo/';
-var glo_url = 'http://182.253.207.76:82/greskit/page/wo/';
+//var glo_url = 'http://182.253.207.76:82/greskit/page/wo/';
 
 function logout(){
 	localStorage.removeItem('user');

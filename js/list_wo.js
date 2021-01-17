@@ -9,6 +9,7 @@ $('#refresh').on('click',function(){
 })
 
 $('#back').on('click',function(){
+	$("#refresh").show();
 	$("#data_content").empty();
 	var assetid='';
 	assetid = $('#assetid').val();
@@ -18,6 +19,7 @@ $('#back').on('click',function(){
 function list_wo(assetid){
 	$('#cam_inv').show();
 	$('#back').hide();
+	$('#save').hide();
 	var assetid = assetid;
 	$.ajax({
         type: "POST",
